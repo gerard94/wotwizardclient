@@ -1,0 +1,147 @@
+/* 
+duniterClient: WotWizard.
+
+Copyright (C) 2017 GérardMeunier
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+*/
+
+package sentriesPrint
+
+
+
+import (
+	
+	BA	"git.duniter.org/gerard94/wotwizard/duniterClient/basicPrint"
+	G	"git.duniter.org/gerard94/util/graphQL"
+	GS	"git.duniter.org/gerard94/wotwizard/duniterClient/gqlSender"
+	J	"git.duniter.org/gerard94/util/json"
+	M	"git.duniter.org/gerard94/util/misc"
+	SM	"git.duniter.org/gerard94/util/strMapping"
+	W	"git.duniter.org/gerard94/wotwizard/duniterClient/web"
+		"fmt"
+		"net/http"
+		"html/template"
+
+)
+
+const (
+	
+	sentriesName = "57sentries"
+	
+	querySentries = `
+		query Sentries {
+			now {
+				number
+				bct
+			}
+			sentryThreshold
+			sentries {
+				uid
+			}
+		}
+	`
+	
+	htmlSentries = `
+		{{define "head"}}<title>{{.Title}}</title>{{end}}
+		{{define "body"}}
+			<p>
+				<a href = "/">{{Map "index"}}</a>
+			</p>
+			<h1>{{.Title}}</h1>
+			<h3>
+				{{.Block}}
+			</h3>
+			<p>
+				{{.Threshold}}
+			<br>
+				{{.Number}}
+			</p>
+			<p>
+				{{range .Ids}}
+					{{.}}
+					<br>
+				{{end}}
+			</p>
+			<p>
+				<a href = "/">{{Map "index"}}</a>
+			</p>
+		{{end}}
+	`
+
+)
+
+type (
+	
+	NowT struct {
+		Number int
+		Bct int64
+	}
+	
+	Identity struct {
+		Uid string
+	}
+	
+	Identities []Identity
+	
+	DataT struct {
+		Now *NowT
+		SentryThreshold int
+		Sentries Identities
+	}
+
+	SentriesT struct {
+		Data *DataT
+	}
+	
+	Disp0 []string
+	
+	Disp struct {
+		Title,
+		Block,
+		Threshold,
+		Number string
+		Ids Disp0
+	}
+
+)
+
+var (
+	
+	sentriesDoc *G.Document
+
+)
+
+func printNow (now *NowT, lang *SM.Lang) string {
+	return fmt.Sprint(lang.Map("#duniterClient:Block"), " ", now.Number, " ", BA.Ts2s(now.Bct, lang))
+} //printNow
+
+func print (sentries *SentriesT, lang *SM.Lang) *Disp {
+	d := sentries.Data
+	t := fmt.Sprint(lang.Map("#duniterClient:Threshold"), " = ", d.SentryThreshold)
+	ids := d.Sentries
+	n := fmt.Sprint(lang.Map("#duniterClient:SentriesNb"), " = ", len(ids))
+	dd := make(Disp0, len(ids))
+	for i, id := range(ids) {
+		dd[i] = id.Uid
+	}
+	return &Disp{Title: lang.Map("#duniterClient:Sentries"), Block: printNow(d.Now, lang), Threshold: t, Number: n, Ids: dd}
+} //print
+
+func end (name string, temp *template.Template, _ *http.Request, w http.ResponseWriter, data W.SharedData) {
+	lang := data.Lang()
+	M.Assert(name == sentriesName, name, 100)
+	j := GS.Send(nil, sentriesDoc, "")
+	sentries := new(SentriesT)
+	J.ApplyTo(j, sentries)
+	temp.ExecuteTemplate(w, name, print(sentries, lang))
+} //end
+
+func init() {
+	sentriesDoc = GS.ExtractDocument(querySentries)
+	W.RegisterPackage(sentriesName, htmlSentries, end, true)
+} //init
