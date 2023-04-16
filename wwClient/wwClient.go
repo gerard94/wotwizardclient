@@ -14,7 +14,7 @@ package main
 
 import (
 	
-	"git.duniter.org/gerard94/wotwizard/duniterClient/run"
+	"git.duniter.org/gerard94/wotwizardclient/run"
 
 )
 

@@ -1,4 +1,4 @@
-module git.duniter.org/gerard94/wotwizard/duniterClient
+module git.duniter.org/gerard94/wotwizardclient
 
 go 1.20
 

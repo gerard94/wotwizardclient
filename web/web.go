@@ -15,9 +15,9 @@ package web
 import (
 	
 	A	"git.duniter.org/gerard94/util/avl"
-	BA	"git.duniter.org/gerard94/wotwizard/duniterClient/basicPrint"
+	BA	"git.duniter.org/gerard94/wotwizardclient/basicPrint"
 	F	"path/filepath"
-	GS	"git.duniter.org/gerard94/wotwizard/duniterClient/gqlSender"
+	GS	"git.duniter.org/gerard94/wotwizardclient/gqlSender"
 	J	"git.duniter.org/gerard94/util/json"
 	M	"git.duniter.org/gerard94/util/misc"
 	R	"git.duniter.org/gerard94/util/resources"

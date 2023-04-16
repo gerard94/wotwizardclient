@@ -16,13 +16,13 @@ package wwViews
 	
 import (
 	
-	BA	"git.duniter.org/gerard94/wotwizard/duniterClient/basicPrint"
-	GS	"git.duniter.org/gerard94/wotwizard/duniterClient/gqlSender"
+	BA	"git.duniter.org/gerard94/wotwizardclient/basicPrint"
+	GS	"git.duniter.org/gerard94/wotwizardclient/gqlSender"
 	J	"git.duniter.org/gerard94/util/json"
 	M	"git.duniter.org/gerard94/util/misc"
 	S	"strconv"
 	SM	"git.duniter.org/gerard94/util/strMapping"
-	W	"git.duniter.org/gerard94/wotwizard/duniterClient/web"
+	W	"git.duniter.org/gerard94/wotwizardclient/web"
 		"fmt"
 		"net/http"
 		"strings"

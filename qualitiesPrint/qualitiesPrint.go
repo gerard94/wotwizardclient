@@ -12,18 +12,18 @@ You should have received a copy of the GNU General Public License along with thi
 
 package qualitiesPrint
 
-// Print qualities
+// Print qualitiesw
 
 import (
 	
-	BA	"git.duniter.org/gerard94/wotwizard/duniterClient/basicPrint"
+	BA	"git.duniter.org/gerard94/wotwizardclient/basicPrint"
 	G	"git.duniter.org/gerard94/util/graphQL"
-	GS	"git.duniter.org/gerard94/wotwizard/duniterClient/gqlSender"
+	GS	"git.duniter.org/gerard94/wotwizardclient/gqlSender"
 	J	"git.duniter.org/gerard94/util/json"
 	M	"git.duniter.org/gerard94/util/misc"
 	S	"git.duniter.org/gerard94/util/sort"
 	SM	"git.duniter.org/gerard94/util/strMapping"
-	W	"git.duniter.org/gerard94/wotwizard/duniterClient/web"
+	W	"git.duniter.org/gerard94/wotwizardclient/web"
 		"bufio"
 		"fmt"
 		"net/http"
