@@ -1,0 +1,219 @@
+STRINGS
+
+AllCertified	All Non-Revoked Certified Identities:
+AllCertifiedIO	History of all sent certifications (start ↑ and end ↓):
+AllCertifiers	All Known Non-Revoked Certifiers:
+AllCertifiersIO	History of all received certifications (start ↑ and end ↓):
+50allParameters	Informations: Blockchain Parameters
+AnswerNb	Greatest number of suggested certifiers:
+AppMLimitDate	Limit Date of Membership Renewal
+AppNLimitDate	Limit Date of Membership Application
+AppRLimitDate	Date of Revocation
+Availability	Availability of next sent certification
+Bct	Blockchain Median Time
+Block	Block
+Brackets	Brackets
+Calculator	Distance and Quality Calculator
+23calculator	Properties: Distance and Quality Calculator
+22centralities	Properties: Centralities
+centralities	Centralities
+Centrality	Centrality
+certification	certification:
+Certifications	Certifications
+certifications	certifications:
+55certificationsFrom	Informations: Certifications From Members
+certificationsFrom	Certifications From Members
+56certificationsTo	Informations: Certifications To Members
+certificationsTo	Certifications To Members
+Certifiers	New certifiers:
+certifiers	new certifiers
+34certLim	Limits: Certifications Limits Dates by Dates
+certsNb	^0 certifications
+Client	Client Version: 
+Computation_duration	Computation Duration
+Day	Day
+day	day(s)
+Delay	Delay (days)
+Distance	Distance Rule
+DistanceE	Expected Distance Rule
+distanceRule	Expected Distance Rule: ^0% (^1 / ^2)
+distanceRule0	Expected Distance Rule: ^0%
+20distances	Properties: Distances (rule)
+distances	Distances (rule)
+DistOfIs	The expected distance of ^0 is ^1%: ^2
+DistOfUnknownIs	The expected distance is ^1%: ^2
+Distribution	Distribution
+dossiers	dossiers
+Duplicate	^0 appears twice (line ^1)
+DuplicateLoc	^0 appears twice (in ^1, line ^2)
+en	English
+Entry	Entry of 
+es	Español
+Exit	Exit of 
+Explorer	Explorer
+1explorer	Web of Trust Explorer
+FirstEntries	First Entries
+FirstEntriesFlux	Flux of First Entries
+FirstEntriesFluxPM	Flux of First Entries per member
+Forward	Number of days until forecast date
+fr	Français
+Group	Enter every nickname of your group, line by line, or let the list empty if you have no group:
+group	group
+Hash	Hash
+history	History
+hour	hour(s)
+In	In
+Index	Index
+index	index
+24infosCertif	Properties: Informations for Certification
+infosCertif	Informations for Certification
+intCertifs	internal certifications
+IsntMemberLoc	^0 is not a member (in ^1, line ^2)
+IsntMemberNorMissing	^0 is not a member nor excluded (line ^1)
+IsntMemberNorMissingLoc	^0 is not a member nor excluded (in ^1, line ^2)
+IsUnknown	^0 is unknown (line ^1)
+IsUnknownLoc	^0 is unknown (in ^1, line ^2)
+KO	KO
+language	Choose Language
+LastApplication	Last membership application
+LCCertifiers	She was certified by 
+LCComplement	This identity will lack certifications soon at the following date:
+LimitsC	Certifications Limits
+LimitDate	Limit Date
+32limitsCerts	Limits: Limit Dates of Certifications
+limitsCerts	Limit Dates of Certifications
+LimitsM	Limits of Memberships
+30limitsMember	Limits: Limit Dates of Memberships
+limitsMember	Limit Dates of Memberships
+31limitsMissing	Limits: Limit Dates of not-renewed memberships
+limitsMissing	Limit Dates of not-renewed memberships
+limitsSubCerts	The displayed identity will lack certifications at this date
+limitsSubMember	The displayed member (with her Distance Rule) will loose its adhesion at this date
+limitsSubMissing	The displayed excluded identity will be revoked once and for all at this date
+LMCertifiers	certified by
+LMComplement	To stay member, this identity must renew her membership:
+Losses	Losses
+LossesFlux	Flux of Losses
+LossesFluxPM	Flux of Losses per Member
+Mean	Mean
+Median	Median
+MEMBER	MEMBER
+53memberIdentities	Informations: Members List
+Members	Members
+404membersCountFlux	Evolution: Flux of Members (graphics)
+405membersCountFluxPM	Evolution: Flux of Members per Member (graphics)
+403membersCountG	Evolution: Number of members (graphics)
+400membersCountT	Evolution:  Number of members (list)
+407membersFEFlux	Evolution: Flux of First Entries (graphics)
+408membersFEFluxPM	Evolution: Flux of First Entries per Member (graphics)
+406membersFirstEntryG	Evolution: First Entries (graphics)
+401membersFirstEntryT	Evolution: First Entries (list)
+MembersFlux	Flux of Members
+MembersFluxPM	Flux of Members per Member
+410membersLossFlux	Evolution: Flux of Losses (graphics)
+411membersLossFluxPM	Evolution: Flux of Losses per Member (graphics)
+409membersLossG	Evolution: Losses (graphics)
+402membersLossT	Evolution: Losses (list)
+MembersNb	Number of members
+33memLim	Limits: Memberships Limits Date by Date
+minApplicationDate	Wait at least two months after the last application (^0)
+minute	minute(s)
+MISSING	EXCLUDED
+Missing	Excluded Identities - Needing a new application
+52missingIdentities	Informations: List of Excluded Identities - Needing a new application
+MissingNb	Number of Excluded Identities
+Missings	Excluded
+month	month(s)
+neededCerts	needed certifications:
+Never	Never
+NEWCOMER	NEWCOMER
+54newcomerIdentities	Informations: List of Newcomers
+Newcomers	Newcomers
+newcomers	Pending Dossiers
+NewcomersNb	Number of Newcomers
+Nickname	Nickname
+no	no
+noGroupL	Ignore group
+NotMembers	Not Members
+OK	OK
+Out	Out
+Para_avgGenTime	The average time for writing 1 block (wished time)
+Para_c	The relative growth of the UD every [dtReeval] period
+Para_dt	Time period between two UD
+Para_dtDiffEval	The number of blocks required to evaluate again PoWMin value
+Para_dtReeval	Time period between two re-evaluation of the UD
+Para_idtyWindow	Maximum delay an identity can wait before being expired for non-writing
+Para_medianTimeBlocks	Number of blocks used for calculating median time
+Para_msPeriod	Minimum delay between 2 memberships of a same issuer
+Para_msValidity	Maximum age of an active membership
+Para_msWindow	Maximum delay a membership can wait before being expired for non-writing
+Para_percentRot	The proportion of calculating members not excluded from the proof of work
+Para_sigPeriod	Minimum delay between two certifications of a same issuer
+Para_sigQty	Minimum quantity of signatures to be part of the WoT
+Para_sigStock	Maximum quantity of active certifications made by member
+Para_sigValidity	Maximum age of an active certification
+Para_sigReplay	Minimum delay before replaying a certification
+Para_sigWindow	Maximum delay a certification can wait before being expired for non-writing
+Para_stepMax	Maximum distance between a WOT member and [xpercent] of sentries
+Para_txWindow	Maximum delay a transaction can wait before being expired for non-writing
+Para_ud0	UD(0), i.e. initial Universal Dividend
+Para_udReevalTime0	Time of first reevaluation of the UD
+Para_udTime0	Time of first UD
+Para_xpercent	Minimum percent of sentries to reach to match the distance rule
+Parameters	Parameters
+pending	pending new application
+PendingApplication	Pending membership application
+Permutations	Permutations
+permutations	permutations
+PermutationsNb	Number of Permutations: 
+PresentCertified	Currently or Soon (°) Certified Identities:
+PresentCertifiers	Current or Coming (°) Certifiers:
+Proba	Probability
+Pseudos	Pseudonyms
+51pseudos	Informations: List of All Pseudonyms
+PseudosNb	Number of Pseudonyms
+Pubkey	Public Key
+21qualities	Properties: Qualities
+qualities	Qualities
+Quality	Quality
+QualityE	Expected Quality
+QualOfIs	The expected quality of ^0 is ^1%
+QualOfUnknownIs	The expected quality is ^1%
+remainingCerts	Remaining Certifications
+requiredCertsNb	^0 certifications, ^1 needed for distance rule
+REVOKED	REVOKED
+Revoked	Revoked
+51revokedIdentities	Informations: List of Revoked Identities
+RevokedM	Revoked Identities
+RevokedNb	Number of Revoked Identities
+Revokeds	Revoked
+SDev	Standard Deviation
+second	second(s)
+Select	Select
+SentCertsHistory	Sent Certifications History
+60sentCertsHistory	Statistics: Sent Certifications History
+Sentries	Sentries
+57sentries	Informations: List of Sentries
+SentriesNb	Number of Sentries
+Sentry	Sentry
+Server	Server Version: 
+ShowFile	File
+SortedByCExpDates	Sorted by Expiration Dates of Certifications
+SortedByCExpDatesL	Sorted by Expiration Dates of Certifications (→: limit date)
+Status	Status
+Threshold	Threshold
+TypeUidOrPubkey	Start of Nickname or Public Key
+Uid	Nickname of the identity under consideration (keep empty if she is a newcomer):
+uid	the identity under consideration
+Utc	Blockchain Actual Time
+ValIdHeads	Values obtained for some extra certifiers, in decreasing order:
+WarnNum	Number of Warnings:
+Written_block	First Membership
+wwByDate	Sorted by Dates
+wwByName	Sorted by Names
+01wwFile	Forecast: Preparatory File
+wwMeta	Metadata
+02wwPerms	Forecast: Permutations
+00wwView	ForeCast: WotWizard View
+year	year(s)
+yes	yes
