@@ -220,6 +220,7 @@ SortedByCExpDates	Sorted by Expiration Dates of Certifications
 SortedByCExpDatesL	Sorted by Expiration Dates of Certifications (→: limit date)
 Status	Status
 Threshold	Threshold
+Tools	Tools Version: 
 TypeUidOrPubkey	Start of Nickname or Public Key
 Uid	Nickname of the identity under consideration (keep empty if she is a newcomer):
 uid	the identity under consideration
@@ -440,6 +441,7 @@ SortedByCExpDates	Tri par dates d'expiration des certifications
 SortedByCExpDatesL	Tri par dates d'expiration des certifications (→ : date limite)
 Status	Statut
 Threshold	Seuil
+Tools	Version outils : 
 TypeUidOrPubkey	Début de pseudo ou de clef publique
 Uid	Pseudo de l'identité considérée (laissez vide s'il s'agit d'un arrivant) :
 uid	l'identité considérée
@@ -660,6 +662,7 @@ SortedByCExpDates	Tri par dates d'expiration des certifications
 SortedByCExpDatesL	Tri par dates d'expiration des certifications (→ : date limite)
 Status	Statut
 Threshold	Seuil
+Tools	Version outils : 
 TypeUidOrPubkey	Début de pseudo ou de clef publique
 Uid	Pseudo de l'identité considérée (laissez vide s'il s'agit d'un arrivant) :
 uid	l'identité considérée

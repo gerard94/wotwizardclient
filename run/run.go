@@ -19,24 +19,59 @@ import (
 	_	"git.duniter.org/gerard94/util/graphQL/static"
 	_	"git.duniter.org/gerard94/wotwizardclient/static"
 	
+	M	"git.duniter.org/gerard94/util/misc"
 	W	"git.duniter.org/gerard94/wotwizardclient/web"
 	
+	// 55certificationsFrom & 56certificationsTo
 	//_	"git.duniter.org/gerard94/wotwizardclient/certificationsPrint"
+	
+	// 23calculator
 	_	"git.duniter.org/gerard94/wotwizardclient/distCalcPrint"
+	
+	// 30limitsMember & 31limitsMissing & 32limitsCerts
 	_	"git.duniter.org/gerard94/wotwizardclient/eventsPrint"
+	
+	// 51revokedIdentities & 52missingIdentities & 53memberIdentities & 54newcomerIdentities
 	//_	"git.duniter.org/gerard94/wotwizardclient/identitiesPrint"
+	
+	// 1explorer
 	_	"git.duniter.org/gerard94/wotwizardclient/identitySearch"
+	
+	// language
 	_	"git.duniter.org/gerard94/wotwizardclient/language"
+	
+	// 400membersCountT & 401membersFirstEntryT & 402membersLossT & 403membersCountG &
+	// 404membersCountFlux & 405membersCountFluxPM &
+	// 406membersFirstEntryG & 407membersFEFlux & 408membersFEFluxPM &
+	// 409membersLossG & 410membersLossFlux & 411membersLossFluxPM
 	_	"git.duniter.org/gerard94/wotwizardclient/membersPrint"
+	
+	// 50allParameters
 	_	"git.duniter.org/gerard94/wotwizardclient/parametersPrint"
+	
+	// 20distances & 21qualities & 22centralities
 	_	"git.duniter.org/gerard94/wotwizardclient/qualitiesPrint"
+	
+	// 24infosCertif
 	_	"git.duniter.org/gerard94/wotwizardclient/infosCertifPrint"
+	
+	// 51pseudos
 	_	"git.duniter.org/gerard94/wotwizardclient/pseudosPrint"
+	
+	// 57sentries
 	_	"git.duniter.org/gerard94/wotwizardclient/sentriesPrint"
+	
+	// 01wwFile & 02wwPerms
 	_	"git.duniter.org/gerard94/wotwizardclient/wotWizardPrint"
+	
+	// 00wwView
 	_	"git.duniter.org/gerard94/wotwizardclient/wwViews"
-
+	
+	
+	// 33memLim & 34certLim
 	_	"git.duniter.org/gerard94/wotwizardclient/tellLimitsPrint"
+	
+	// 60sentCertsHistory
 	_	"git.duniter.org/gerard94/wotwizardclient/stats"
 	
 		"fmt"
@@ -45,12 +80,12 @@ import (
 
 const (
 	
-	version = "5.12.0"
+	version = "5.12.1"
 
 )
 
 func Start () {
-	fmt.Println("WotWizard version", version, "\n")
+	fmt.Println("WotWizard Client version", version, "Tools version", M.Version(), "\n")
 	W.Version = version
 	W.Start()
 }

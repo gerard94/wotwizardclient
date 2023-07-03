@@ -52,7 +52,7 @@ const (
 		{{define "body"}}
 			<h1>{{Map "Index"}}</h1>
 			<p>
-				{{Map "Server"}}{{.VersionS}}, {{Map "Client"}}{{.VersionC}}
+				{{Map "Server"}}{{.VersionS}}, {{Map "Client"}}{{.VersionC}}, {{Map "Tools"}}{{.VersionU}}
 			</p>
 			{{range $name, $temp := .P}}
 				<p>
@@ -228,13 +228,14 @@ func manageIndex (name string, temp *template.Template, _ *http.Request, w http.
 	
 	type
 		output struct {
+			VersionU,
 			VersionS,
 			VersionC string
 			P map[string] *pack
 		}
 	
 	j := GS.Send(nil, versionDoc, ""); M.Assert(j != nil, 100)
-	err := temp.ExecuteTemplate(w, name, &output{VersionS: j.(*J.Object).Fields[0].Value.(*J.JsonVal).Json.(*J.Object).Fields[0].Value.(*J.String).S, VersionC: Version, P: packagesD})
+	err := temp.ExecuteTemplate(w, name, &output{VersionU: M.Version(),VersionS: j.(*J.Object).Fields[0].Value.(*J.JsonVal).Json.(*J.Object).Fields[0].Value.(*J.String).S, VersionC: Version, P: packagesD})
 	M.Assert(err == nil, err, 101)
 }
 
