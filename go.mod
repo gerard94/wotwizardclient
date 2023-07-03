@@ -2,6 +2,6 @@ module git.duniter.org/gerard94/wotwizardclient
 
 go 1.20
 
-require git.duniter.org/gerard94/util v1.0.0
+require git.duniter.org/gerard94/util v1.0.2
 
-replace git.duniter.org/gerard94/util => ../../util
+//replace git.duniter.org/gerard94/util => ../../util
