@@ -340,9 +340,9 @@ type (
 	ErrorT struct {
 		Message string
 		Location struct {
-			Position,
-			Line,
-			Column int
+			P,
+			L,
+			C int
 		}
 		Path PathT
 	}
