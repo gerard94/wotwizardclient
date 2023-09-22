@@ -68,7 +68,6 @@ var (
 func send (request string) J.Json {
 	r, err := http.Post("http://" + BA.ServerAddress(), "application/json", strings.NewReader(request))
 	for err != nil {
-		//M.Assert(strings.Index(err.Error(), "connection refused") >= 0, err, 100)
 		time.Sleep(sendSleepTime)
 		r, err = http.Post("http://" + BA.ServerAddress(), "application/json", strings.NewReader(request))
 	}

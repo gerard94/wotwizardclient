@@ -520,7 +520,7 @@ func end (name string, temp *template.Template, r *http.Request, w http.Response
 		J.ApplyTo(j, ww)
 		temp.ExecuteTemplate(w, name, printTextM(ww, lang))
 	default:
-		M.Halt(disp, 101)
+		M.Halt(disp, 107)
 	}
 } //end
 
