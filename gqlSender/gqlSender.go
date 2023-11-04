@@ -71,8 +71,10 @@ func send (request string) J.Json {
 		time.Sleep(sendSleepTime)
 		r, err = http.Post("http://" + BA.ServerAddress(), "application/json", strings.NewReader(request))
 	}
-	M.Assert(r.StatusCode / 100 == 2, r.StatusCode, 101)
 	defer r.Body.Close()
+	if r.StatusCode / 100 != 2 {
+		return nil
+	}
 	b, err := ioutil.ReadAll(r.Body)
 	M.Assert(err == nil, err, 102)
 	return J.ReadString(string(b))
@@ -126,7 +128,9 @@ func Send (j J.Json, doc *G.Document, op string) J.Json {
 	askM.Unlock()
 	mk.BuildObject()
 	j = send(mk.GetJson().GetFlatString())
-	M.Assert(j != nil, 100)
+	if j == nil {
+		return &J.Object{}
+	}
 	_, ok := J.GetValue(j.GetObject(), "errors")
 	M.Assert(!ok, 110)
 	queryM.Lock()
