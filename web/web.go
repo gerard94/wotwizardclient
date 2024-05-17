@@ -233,9 +233,21 @@ func manageIndex (name string, temp *template.Template, _ *http.Request, w http.
 			VersionC string
 			P map[string] *pack
 		}
+		
+	versionS := func () string {
+		j := GS.Send(nil, versionDoc, ""); if j == nil {return ""}
+		k := j.JKind(); if k != J.ObjectKind {return ""}
+		o := j.GetObject()
+		v, b := J.GetValue(o, "data"); if !b {return ""}
+		j, b = J.GetJson(v); if !b {return ""}
+		k = j.JKind(); if k != J.ObjectKind {return ""}
+		o = j.GetObject()
+		v, b = J.GetValue(o, "version"); if !b {return ""}
+		s, b := J.GetString(v); if !b {return ""}
+		return s
+	}
 	
-	j := GS.Send(nil, versionDoc, ""); M.Assert(j != nil, 100)
-	err := temp.ExecuteTemplate(w, name, &output{VersionU: M.Version(),VersionS: j.(*J.Object).Fields[0].Value.(*J.JsonVal).Json.(*J.Object).Fields[0].Value.(*J.String).S, VersionC: Version, P: packagesD})
+	err := temp.ExecuteTemplate(w, name, &output{VersionU: M.Version(),VersionS: versionS(), VersionC: Version, P: packagesD})
 	M.Assert(err == nil, err, 101)
 }
 

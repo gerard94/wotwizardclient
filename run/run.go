@@ -80,7 +80,7 @@ import (
 
 const (
 	
-	version = "5.12.3"
+	version = "5.12.4"
 
 )
 

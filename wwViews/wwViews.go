@@ -490,6 +490,9 @@ func end (name string, temp *template.Template, r *http.Request, w http.Response
 	if r.Method == "POST" {
 		r.ParseForm()
 		disp = r.PostFormValue("display")
+		if disp == "" {
+			disp = "0"
+		}
 	}
 	var j J.Json
 	switch disp {
