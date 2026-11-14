@@ -14,65 +14,65 @@ package run
 
 import (
 	
-	_	"git.duniter.org/gerard94/util/babel/static"
-	_	"git.duniter.org/gerard94/util/json/static"
-	_	"git.duniter.org/gerard94/util/graphQL/static"
-	_	"git.duniter.org/gerard94/wotwizardclient/static"
+	_	"github.com/gerard94/util/babel/static"
+	_	"github.com/gerard94/util/json/static"
+	_	"github.com/gerard94/util/graphQL/static"
+	_	"github.com/gerard94/wotwizardclient/static"
 	
-	M	"git.duniter.org/gerard94/util/misc"
-	W	"git.duniter.org/gerard94/wotwizardclient/web"
+	M	"github.com/gerard94/util/misc"
+	W	"github.com/gerard94/wotwizardclient/web"
 	
 	// 55certificationsFrom & 56certificationsTo
-	//_	"git.duniter.org/gerard94/wotwizardclient/certificationsPrint"
+	//_	"github.com/gerard94/wotwizardclient/certificationsPrint"
 	
 	// 23calculator
-	_	"git.duniter.org/gerard94/wotwizardclient/distCalcPrint"
+	_	"github.com/gerard94/wotwizardclient/distCalcPrint"
 	
 	// 30limitsMember & 31limitsMissing & 32limitsCerts
-	_	"git.duniter.org/gerard94/wotwizardclient/eventsPrint"
+	_	"github.com/gerard94/wotwizardclient/eventsPrint"
 	
 	// 51revokedIdentities & 52missingIdentities & 53memberIdentities & 54newcomerIdentities
-	//_	"git.duniter.org/gerard94/wotwizardclient/identitiesPrint"
+	//_	"github.com/gerard94/wotwizardclient/identitiesPrint"
 	
 	// 1explorer
-	_	"git.duniter.org/gerard94/wotwizardclient/identitySearch"
+	_	"github.com/gerard94/wotwizardclient/identitySearch"
 	
 	// language
-	_	"git.duniter.org/gerard94/wotwizardclient/language"
+	_	"github.com/gerard94/wotwizardclient/language"
 	
 	// 400membersCountT & 401membersFirstEntryT & 402membersLossT & 403membersCountG &
 	// 404membersCountFlux & 405membersCountFluxPM &
 	// 406membersFirstEntryG & 407membersFEFlux & 408membersFEFluxPM &
 	// 409membersLossG & 410membersLossFlux & 411membersLossFluxPM
-	_	"git.duniter.org/gerard94/wotwizardclient/membersPrint"
+	_	"github.com/gerard94/wotwizardclient/membersPrint"
 	
 	// 50allParameters
-	_	"git.duniter.org/gerard94/wotwizardclient/parametersPrint"
+	_	"github.com/gerard94/wotwizardclient/parametersPrint"
 	
 	// 20distances & 21qualities & 22centralities
-	_	"git.duniter.org/gerard94/wotwizardclient/qualitiesPrint"
+	_	"github.com/gerard94/wotwizardclient/qualitiesPrint"
 	
 	// 24infosCertif
-	_	"git.duniter.org/gerard94/wotwizardclient/infosCertifPrint"
+	_	"github.com/gerard94/wotwizardclient/infosCertifPrint"
 	
 	// 51pseudos
-	_	"git.duniter.org/gerard94/wotwizardclient/pseudosPrint"
+	_	"github.com/gerard94/wotwizardclient/pseudosPrint"
 	
 	// 57sentries
-	_	"git.duniter.org/gerard94/wotwizardclient/sentriesPrint"
+	_	"github.com/gerard94/wotwizardclient/sentriesPrint"
 	
 	// 01wwFile & 02wwPerms
-	_	"git.duniter.org/gerard94/wotwizardclient/wotWizardPrint"
+	_	"github.com/gerard94/wotwizardclient/wotWizardPrint"
 	
 	// 00wwView
-	_	"git.duniter.org/gerard94/wotwizardclient/wwViews"
+	_	"github.com/gerard94/wotwizardclient/wwViews"
 	
 	
 	// 33memLim & 34certLim
-	_	"git.duniter.org/gerard94/wotwizardclient/tellLimitsPrint"
+	_	"github.com/gerard94/wotwizardclient/tellLimitsPrint"
 	
 	// 60sentCertsHistory
-	_	"git.duniter.org/gerard94/wotwizardclient/stats"
+	_	"github.com/gerard94/wotwizardclient/stats"
 	
 		"fmt"
 

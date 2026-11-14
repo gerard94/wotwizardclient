@@ -14,11 +14,11 @@ package parametersPrint
 
 import (
 	
-	G	"git.duniter.org/gerard94/util/graphQL"
-	GS	"git.duniter.org/gerard94/wotwizardclient/gqlSender"
-	J	"git.duniter.org/gerard94/util/json"
-	SM	"git.duniter.org/gerard94/util/strMapping"
-	W	"git.duniter.org/gerard94/wotwizardclient/web"
+	G	"github.com/gerard94/util/graphQL"
+	GS	"github.com/gerard94/wotwizardclient/gqlSender"
+	J	"github.com/gerard94/util/json"
+	SM	"github.com/gerard94/util/strMapping"
+	W	"github.com/gerard94/wotwizardclient/web"
 		"fmt"
 		"net/http"
 		"strings"

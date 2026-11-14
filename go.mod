@@ -1,7 +1,5 @@
-module git.duniter.org/gerard94/wotwizardclient
+module wotwizard/duniterClient
 
-go 1.20
+go 1.27.3
 
-require git.duniter.org/gerard94/util v1.0.3
-
-replace git.duniter.org/gerard94/util => ../../util
+require github.com/gerard94/wotwizard v0.0.0-20261114230338-0ed3216ad0a8 // indirect

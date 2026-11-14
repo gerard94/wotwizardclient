@@ -14,12 +14,12 @@ package certificationsPrint
 
 import (
 	
-	BA	"git.duniter.org/gerard94/wotwizardclient/basicPrint"
-	GS	"git.duniter.org/gerard94/wotwizardclient/gqlSender"
-	J	"git.duniter.org/gerard94/util/json"
-	M	"git.duniter.org/gerard94/util/misc"
-	SM	"git.duniter.org/gerard94/util/strMapping"
-	W	"git.duniter.org/gerard94/wotwizardclient/web"
+	BA	"github.com/gerard94/wotwizardclient/basicPrint"
+	GS	"github.com/gerard94/wotwizardclient/gqlSender"
+	J	"github.com/gerard94/util/json"
+	M	"github.com/gerard94/util/misc"
+	SM	"github.com/gerard94/util/strMapping"
+	W	"github.com/gerard94/wotwizardclient/web"
 		"fmt"
 		"net/http"
 		"math"
@@ -199,7 +199,7 @@ func moments (certifications *CertificationsT, received bool) (d Dist, mean, sDe
 			} else {
 				cs = id.Sent_certifications
 			}
-			n = M.Max(n, len(cs))
+			n = max(n, len(cs))
 		}
 		d = make(Dist, n + 1)
 		for _, id := range ids {

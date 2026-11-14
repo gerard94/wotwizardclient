@@ -14,8 +14,8 @@ package language
 
 import (
 	
-	M	"git.duniter.org/gerard94/util/misc"
-	W	"git.duniter.org/gerard94/wotwizardclient/web"
+	M	"github.com/gerard94/util/misc"
+	W	"github.com/gerard94/wotwizardclient/web"
 		"net/http"
 		"html/template"
 

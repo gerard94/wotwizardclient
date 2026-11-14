@@ -14,12 +14,12 @@ package wotWizardPrint
 
 import (
 	
-	BA	"git.duniter.org/gerard94/wotwizardclient/basicPrint"
-	GS	"git.duniter.org/gerard94/wotwizardclient/gqlSender"
-	J	"git.duniter.org/gerard94/util/json"
-	M	"git.duniter.org/gerard94/util/misc"
-	SM	"git.duniter.org/gerard94/util/strMapping"
-	W	"git.duniter.org/gerard94/wotwizardclient/web"
+	BA	"github.com/gerard94/wotwizardclient/basicPrint"
+	GS	"github.com/gerard94/wotwizardclient/gqlSender"
+	J	"github.com/gerard94/util/json"
+	M	"github.com/gerard94/util/misc"
+	SM	"github.com/gerard94/util/strMapping"
+	W	"github.com/gerard94/wotwizardclient/web"
 		"fmt"
 		"net/http"
 	S	"strconv"
@@ -421,7 +421,7 @@ func printFile (f *File, lang *SM.Lang) *DispF {
 		n := -1
 		for _, cd := range cds {
 			if cd.Dossier != nil {
-				n = M.Max(n, cd.Dossier.Main_certifs)
+				n = max(n, cd.Dossier.Main_certifs)
 			}
 		}
 		m := 0

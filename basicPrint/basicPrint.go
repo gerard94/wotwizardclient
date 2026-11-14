@@ -14,14 +14,15 @@ package basicPrint
 
 import (
 	
-	A	"git.duniter.org/gerard94/util/avl"
+	A	"github.com/gerard94/util/avl"
 	F	"path/filepath"
-	M	"git.duniter.org/gerard94/util/misc"
-	R	"git.duniter.org/gerard94/util/resources"
-	SM	"git.duniter.org/gerard94/util/strMapping"
+	M	"github.com/gerard94/util/misc"
+	R	"github.com/gerard94/util/resources"
+	SM	"github.com/gerard94/util/strMapping"
 		"text/scanner"
 		"errors"
 		"fmt"
+		"math"
 		"os"
 		"time"
 		"unicode"
@@ -39,9 +40,9 @@ const (
 	
 	OldIcon = "×" // Icon for old items (old or leaving members)
 	
-	never = M.MaxInt64 // In WotWizard window
-	Revoked = M.MinInt64 // Limit date for revoked members
-	Already = M.MinInt64 + 1 // Already available certification date
+	never = math.MaxInt64 // In WotWizard window
+	Revoked = math.MinInt64 // Limit date for revoked members
+	Already = math.MinInt64 + 1 // Already available certification date
 	
 	Lt = A.Lt
 	Eq = A.Eq
@@ -112,7 +113,7 @@ func downC (r []rune, i *int) rune {
 	for c != 0 {
 		*i++
 		if LetterOrDigit(c) {
-			c = M.Min32(unicode.ToLower(c), unicode.ToUpper(c))
+			c = min(unicode.ToLower(c), unicode.ToUpper(c))
 			break
 		}
 		c = r[*i]

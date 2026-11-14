@@ -14,10 +14,10 @@ package gqlSender
 
 import (
 	
-	BA	"git.duniter.org/gerard94/wotwizardclient/basicPrint"
-	G	"git.duniter.org/gerard94/util/graphQL"
-	J	"git.duniter.org/gerard94/util/json"
-	M	"git.duniter.org/gerard94/util/misc"
+	BA	"github.com/gerard94/wotwizardclient/basicPrint"
+	G	"github.com/gerard94/util/graphQL"
+	J	"github.com/gerard94/util/json"
+	M	"github.com/gerard94/util/misc"
 		"fmt"
 		"net/http"
 		"io/ioutil"
@@ -28,9 +28,7 @@ import (
 )
 
 const (
-	
-	errNoServer = 1
-	
+
 	subscriptionReset = `
 		subscription ResetQueryMap {
 			now {

@@ -14,13 +14,13 @@ package distCalcPrint
 
 import (
 	
-	BA	"git.duniter.org/gerard94/wotwizardclient/basicPrint"
-	G	"git.duniter.org/gerard94/util/graphQL"
-	GS	"git.duniter.org/gerard94/wotwizardclient/gqlSender"
-	J	"git.duniter.org/gerard94/util/json"
-	M	"git.duniter.org/gerard94/util/misc"
-	SM	"git.duniter.org/gerard94/util/strMapping"
-	W	"git.duniter.org/gerard94/wotwizardclient/web"
+	BA	"github.com/gerard94/wotwizardclient/basicPrint"
+	G	"github.com/gerard94/util/graphQL"
+	GS	"github.com/gerard94/wotwizardclient/gqlSender"
+	J	"github.com/gerard94/util/json"
+	M	"github.com/gerard94/util/misc"
+	SM	"github.com/gerard94/util/strMapping"
+	W	"github.com/gerard94/wotwizardclient/web"
 		"bufio"
 		"fmt"
 		"net/http"
